@@ -1,0 +1,16 @@
+{
+  "name": "kata-tilehaven",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Tilehaven \u2014 a small world, tile by tile.",
+  "scripts": {
+    "dev": "node scripts/server.mjs",
+    "build": "node scripts/build.mjs",
+    "check": "node --check src/app.js && node --check src/model.js && node --check src/tiles.js && node --check src/archive.js && node --check scripts/server.mjs && node --check scripts/build.mjs && node --check tests/browser.js",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

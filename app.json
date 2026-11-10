@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "kind": "app",
+  "title": "Tilehaven",
+  "repository": "kata-app-inspired-by-tiled-codex-dot",
+  "section": "Kata Tool Shed",
+  "category": "Game Development",
+  "tagline": "A small world, tile by tile.",
+  "description": "An original local-first tile-map workbench with a pixel field kit, layered editing, and portable exports.",
+  "entryPoint": "index.html",
+  "status": "live",
+  "toolShedUrl": "https://intrepion.github.io/tools/",
+  "screenshots": [
+    "docs/screenshots/tilehaven-desktop.jpg",
+    "docs/screenshots/tilehaven-narrow.jpg"
+  ],
+  "inspiration": {
+    "name": "Tiled",
+    "url": "https://www.mapeditor.org/"
+  },
+  "license": "MIT",
+  "features": [
+    "24 original pixel tiles",
+    "Brush, eraser, fill, rectangle and picker",
+    "Eight layers with opacity, visibility, lock and reorder",
+    "80-step undo and redo",
+    "Three starter maps",
+    "Project JSON save/open and browser autosave",
+    "PNG image export",
+    "Tiled JSON + atlas ZIP export",
+    "Keyboard canvas editing and responsive layout"
+  ],
+  "launchUrl": "https://intrepion.github.io/kata-app-inspired-by-tiled-codex-dot/"
+}

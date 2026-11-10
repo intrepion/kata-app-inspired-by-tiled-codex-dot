@@ -1,0 +1,52 @@
+{
+  "id": "kata-app-inspired-by-tiled-codex-dot",
+  "title": "Tilehaven",
+  "inspiration": "Tiled",
+  "category": "Game Development",
+  "tagline": "A small world, tile by tile.",
+  "description": "An original local-first tile-map workbench with a pixel field kit, layered editing, and portable exports.",
+  "status": "live",
+  "repo": "https://github.com/intrepion/kata-app-inspired-by-tiled-codex-dot",
+  "launch": "https://intrepion.github.io/kata-app-inspired-by-tiled-codex-dot/",
+  "verified": null,
+  "features": [
+    "24 original pixel tiles",
+    "Brush, eraser, fill, rectangle and picker",
+    "Eight layers with opacity, visibility, lock and reorder",
+    "80-step undo and redo",
+    "Three starter maps",
+    "Project JSON save/open and browser autosave",
+    "PNG image export",
+    "Tiled JSON + atlas ZIP export",
+    "Keyboard canvas editing and responsive layout"
+  ],
+  "projectNotes": [
+    "An independent learning project inspired by Tiled, with original code, art, interface and demo arrangements. Not an official Tiled product or a feature-for-feature replacement.",
+    "Tilehaven opens only its own version-1 project JSON. Tiled export is a finite orthogonal TMJ map plus matching PNG atlas, not full interchange support. The downloaded bundle was decoded and structurally verified, but not opened in native Tiled.",
+    "Fixed 32px tile palette, 4\u201364 tiles per map side, up to eight layers and 80 undo steps. No custom tilesets, objects, infinite maps, flip flags, terrain rules, collision or animation.",
+    "Everything stays in the browser. Autosave is best effort; save editable project backups. Published as a static GitHub Pages app."
+  ],
+  "screenshots": [
+    {
+      "file": "/screenshots/apps/kata-app-inspired-by-tiled-codex-dot/tilehaven-desktop.jpg",
+      "alt": "Tilehaven desktop map editor with the Fernbrook Crossing demo, original pixel palette, drawing tools and three layers.",
+      "caption": "Fernbrook Crossing in the desktop workbench.",
+      "width": 1165,
+      "height": 1045,
+      "capturedAt": "2026-11-10",
+      "sha256": "d93414885a62ca070578764728ff39d1286fb14896c0820015bba486bc4b7ec9",
+      "source": "Original Chrome/CUA screenshot from http://127.0.0.1:4173/. Full-page desktop capture. Captured before the final recovery/pointer-cache regression patches. No image editing or synthesis."
+    },
+    {
+      "file": "/screenshots/apps/kata-app-inspired-by-tiled-codex-dot/tilehaven-narrow.jpg",
+      "alt": "Tilehaven at 390 CSS pixels with the map canvas, compact tile palette, layers and map preview.",
+      "caption": "Responsive layout at 390 CSS pixels; not a physical-device test.",
+      "width": 390,
+      "height": 1390,
+      "capturedAt": "2026-11-10",
+      "sha256": "eda8525565452abc7a463ae39a0e110953e7b3f144b7872e8239c8a1f3257ce8",
+      "source": "Original Chrome/CUA direct screenshot crop to a same-origin 390\u00d71390 CSS-pixel iframe at http://127.0.0.1:4173/docs/qa-narrow.html after the final recovery/pointer/cache fixes. Not a physical phone. No image editing or synthesis."
+    }
+  ],
+  "verificationEvidence": "Local-only verification: syntax/build, 13 Node tests and 11 browser regression cases pass. Chrome on http://127.0.0.1:4173/ verified keyboard drawing tools, layer edits/guards, undo/redo, project download/reimport/reload round-trip, actual PNG and Tiled ZIP downloads. Synthetic pointer regressions cover cancellation, secondary pointers and redo; not a physical multitouch test. Browser behavior was tested on localhost; publication is separately checked by HTTP and matching asset hashes."
+}

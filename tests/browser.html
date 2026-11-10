@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tilehaven browser regressions</title>
+<style>
+body{font:16px/1.5 system-ui,sans-serif;max-width:1280px;margin:32px auto;padding:0 20px;background:#f4f6ef;color:#20392f}button{font:inherit;padding:10px 22px;cursor:pointer}li{margin:9px 0}.pass{color:#216039}.fail{color:#a12929}iframe{width:100%;height:820px;border:1px solid #88998b;background:white}code{font-size:.9em}#summary{font-weight:700}small{display:block;max-width:1000px}
+</style>
+</head>
+<body>
+<h1>Tilehaven browser regressions</h1>
+<p>Loads the real app in a same-origin iframe. Nothing runs until you choose Run tests.</p>
+<p><strong>Synthetic pointer regression:</strong> pointer capture methods are replaced with an in-memory test double because scripted PointerEvents do not activate native pointers. These checks exercise app event handlers, not native touch capture or browser gestures.</p>
+<small>Run through localhost, not a file URL. The suite temporarily replaces only <code>tilehaven.project.v1</code> and restores its exact original value in a finally block. Close other Tilehaven tabs first; do not edit the app or close this page during a run. No downloads, publishing, or network calls are triggered by the suite other than loading local app assets.</small>
+<p><button id="run" type="button">Run tests</button></p>
+<p id="summary" role="status" aria-live="polite">Ready.</p>
+<ol id="results"></ol>
+<div id="fixture"></div>
+<script type="module" src="./browser.js"></script>
+</body>
+</html>

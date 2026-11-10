@@ -1,0 +1,8 @@
+{
+  "date": "2026-11-10",
+  "url": "http://127.0.0.1:4173/tests/browser.html",
+  "passed": 11,
+  "failed": 0,
+  "originalAutosaveRestored": true,
+  "pointerMode": "Synthetic events with capture bookkeeping test double. Native multitouch not tested."
+}

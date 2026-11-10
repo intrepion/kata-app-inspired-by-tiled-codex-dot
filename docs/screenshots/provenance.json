@@ -1,0 +1,22 @@
+[
+  {
+    "file": "/screenshots/apps/kata-app-inspired-by-tiled-codex-dot/tilehaven-desktop.jpg",
+    "alt": "Tilehaven desktop map editor with the Fernbrook Crossing demo, original pixel palette, drawing tools and three layers.",
+    "caption": "Fernbrook Crossing in the desktop workbench.",
+    "width": 1165,
+    "height": 1045,
+    "capturedAt": "2026-11-10",
+    "sha256": "d93414885a62ca070578764728ff39d1286fb14896c0820015bba486bc4b7ec9",
+    "source": "Original Chrome/CUA screenshot from http://127.0.0.1:4173/. Full-page desktop capture. Captured before the final recovery/pointer-cache regression patches. No image editing or synthesis."
+  },
+  {
+    "file": "/screenshots/apps/kata-app-inspired-by-tiled-codex-dot/tilehaven-narrow.jpg",
+    "alt": "Tilehaven at 390 CSS pixels with the map canvas, compact tile palette, layers and map preview.",
+    "caption": "Responsive layout at 390 CSS pixels; not a physical-device test.",
+    "width": 390,
+    "height": 1390,
+    "capturedAt": "2026-11-10",
+    "sha256": "eda8525565452abc7a463ae39a0e110953e7b3f144b7872e8239c8a1f3257ce8",
+    "source": "Original Chrome/CUA direct screenshot crop to a same-origin 390\u00d71390 CSS-pixel iframe at http://127.0.0.1:4173/docs/qa-narrow.html after the final recovery/pointer/cache fixes. Not a physical phone. No image editing or synthesis."
+  }
+]
